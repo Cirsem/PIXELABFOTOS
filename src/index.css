@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-app-dark: #121215;
+  --color-app-surface: #1E1E24;
+  --color-app-card: #25252D;
+  --color-app-border: #32323D;
+  --color-app-purple: #8B5CF6;
+  --color-app-purple-dark: #6D28D9;
+  --color-app-purple-light: #A78BFA;
+  --color-sub-text: #9CA3AF;
+  --font-sans: "Plus Jakarta Sans", "Roboto", system-ui, -apple-system, sans-serif;
+}
+
+/* Custom range sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #3A3A45;
+  border-radius: 9999px;
+  height: 4px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #8B5CF6;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+  transition: transform 0.15s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+
+input[type="range"]::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #8B5CF6;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+}
+
+/* Scrollbar utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Visual Glow effects */
+.glow-purple {
+  box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.45);
+}
+
+.glow-purple-lg {
+  box-shadow: 0 15px 35px -5px rgba(139, 92, 246, 0.55);
+}
+
+/* Touch manipulation */
+.touch-canvas {
+  touch-action: none;
+}
